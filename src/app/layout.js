@@ -17,40 +17,36 @@ const geistMono = Geist_Mono({
 
 /* ==========================================
    SEO METADATA CONFIGURATION
-   Replace 'https://www.morvicropscience.com' 
-   with your actual live domain.
 ========================================== */
 export const metadata = {
-  metadataBase: new URL('https://www.morvicropscience.com'), // CHANGE THIS TO YOUR ACTUAL DOMAIN
+  metadataBase: new URL('https://www.bmsdirectadmission.com'), 
   
   title: {
-    default: "Morvi Crop Science Pvt Ltd | Premium Agriculture Solutions",
-    template: "%s | Morvi Crop Science" // This adds suffix to other pages automatically
+    default: "BMSCE & BMSIT Direct Admission | B.Tech 2026-2027",
+    template: "%s | BMS Direct Admission" 
   },
   
-  description: "Morvi Crop Science Pvt Ltd empowers farmers with high-yield hybrid seeds, advanced insecticides, and premium fertilizers for maximum crop productivity.",
+  description: "Secure your B.Tech seat at BMSCE and BMSIT through direct admission under the management quota for the 2026-2027 academic year. Expert educational consulting.",
   
   keywords: [
-    "Morvi Crop Science",
-    "Agriculture India",
-    "Hybrid Seeds",
-    "Paddy Seeds",
-    "Crop Protection",
-    "Insecticides",
-    "Herbicides",
-    "Fungicides",
-    "Agricultural Fertilizers",
-    "Farming Solutions"
+    "BMSCE Direct Admission",
+    "BMSIT Direct Admission",
+    "BMSCE Management Quota",
+    "B.Tech Admission Bangalore",
+    "Engineering Admissions 2026",
+    "BMS College of Engineering",
+    "Direct Admission in BMS",
+    "Education Consulting"
   ],
 
-  authors: [{ name: "Morvi Crop Science" }],
+  authors: [{ name: "BMS Direct Admission" }],
   
   // How links look when shared on Facebook/LinkedIn/WhatsApp
   openGraph: {
-    title: "Morvi Crop Science Pvt Ltd",
-    description: "Trusted partner for Indian farmers. High-quality seeds and crop protection solutions.",
-    url: 'https://www.morvicropscience.com',
-    siteName: 'Morvi Crop Science',
+    title: "BMSCE & BMSIT B.Tech Direct Admission 2026-2027",
+    description: "Trusted admission guidance for BMS College of Engineering (BMSCE) and BMSIT under management quota.",
+    url: 'https://www.bmsdirectadmission.com',
+    siteName: 'BMS Direct Admission',
     locale: 'en_IN',
     type: 'website',
     images: [
@@ -58,7 +54,7 @@ export const metadata = {
         url: '/og-image.jpg', // Ensure you have this image in your public folder
         width: 1200,
         height: 630,
-        alt: 'Morvi Crop Science Agricultural Products',
+        alt: 'BMSCE Direct Admission 2026-2027',
       },
     ],
   },
@@ -66,13 +62,13 @@ export const metadata = {
   // Twitter Card data
   twitter: {
     card: 'summary_large_image',
-    title: "Morvi Crop Science Pvt Ltd",
-    description: "Premium seeds and agricultural solutions for better yield.",
-    images: ['/og-image.jpg'], // Same image as above
+    title: "BMSCE & BMSIT Direct Admission",
+    description: "Secure your engineering seat today. Expert guidance for management quota admissions.",
+    images: ['/og-image.jpg'], 
   },
 
   icons: {
-    icon: '/favicon.ico', // Ensure you have a favicon in public folder
+    icon: '/favicon.ico', 
   },
 
   robots: {
@@ -85,24 +81,26 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Optional: Add JSON-LD Structured Data for Local Business/Organization */}
+        {/* JSON-LD Structured Data for Educational Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "AgriculturalBusiness",
-              "name": "Morvi Crop Science Pvt Ltd",
-              "url": "https://www.morvicropscience.com",
-              "description": "Leading provider of agricultural seeds, insecticides, and fertilizers.",
+              "@type": "EducationalOrganization",
+              "name": "BMS Direct Admission",
+              "url": "https://www.bmsdirectadmission.com",
+              "description": "Providing B.Tech direct admission guidance for BMSCE and BMSIT under management quota.",
               "address": {
                 "@type": "PostalAddress",
+                "addressLocality": "Bangalore",
+                "addressRegion": "Karnataka",
                 "addressCountry": "IN"
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+91-9876543210", 
-                "contactType": "customer service"
+                "telephone": "+91-8217632035", 
+                "contactType": "admissions support"
               }
             }),
           }}
@@ -112,11 +110,11 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-gray-900`}
       >
         <Navbar />
-        {/* <MorviNavbar/> */}
         
         <main className="min-h-screen">
             {children}
         </main>
+        
         <FloatingActions/>
         <Footer />
       </body>

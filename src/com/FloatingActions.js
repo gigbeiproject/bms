@@ -3,7 +3,7 @@ import React from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
 
 const FloatingActions = () => {
-  const phoneNumber = "8123957255";
+  const phoneNumber = "8217632035";
   const whatsappMessage = "Hello, I am interested in RV College B.Tech Direct Admission 2025-26. Please provide more details.";
 
   return (

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///D:/himashu/bms/my-next-app/src/app/page.js"],"sourcesContent":["import React from 'react'\n\nfunction page() {\n  return (\n    <div>\n      hello\n      <HeroSection/>\n    </div>\n  )\n}\n\nexport default page\n"],"names":[],"mappings":";;;;AAAA;;;AAEA,SAAS;IACP,qBACE,8OAAC;;YAAI;0BAEH,8OAAC;;;;;;;;;;;AAGP;uCAEe","debugId":null}}]
+}
